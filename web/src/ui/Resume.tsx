@@ -3,24 +3,6 @@ import { ZooopLogo } from './ZooopLogo'
 import { SOCIAL_ICONS } from './SocialIcons'
 import { FOCUS_POINTS } from '../data/focusPoints'
 
-const SOCIAL_LINKS = [
-  {
-    id: 'douyin',
-    label: '抖音',
-    href: 'https://www.douyin.com/user/MS4wLjABAAAAlmQDgHf0NlbsjrfWENm8LyrIikxSRRq7mzlzQSIStQJkV7Ju52B6A55zw5TUDU5d',
-  },
-  {
-    id: 'bilibili',
-    label: 'B站',
-    href: 'https://space.bilibili.com/275344092?spm_id_from=333.937.0.0',
-  },
-  {
-    id: 'xiaohongshu',
-    label: '小红书',
-    href: 'https://www.xiaohongshu.com/user/profile/5ceba8c8000000000502fd69',
-  },
-]
-
 // 履历数据（双语）。英文为译稿，可按需润色。
 interface ResumeGroup {
   heading?: string
@@ -44,99 +26,109 @@ const RESUME: Record<'en' | 'zh', { title: string; entries: ResumeEntry[] }> = {
     title: 'Résumé',
     entries: [
       {
-        period: '2013 – 2017',
-        place: 'Sun Yat-sen University',
-        role: 'B.S. in Software Engineering',
-      },
-      {
-        period: '2017 – 2020',
-        place: 'HOTSAR Studio · Shanghai',
-        role: 'Co-founder',
-        logo: { src: `${import.meta.env.BASE_URL}images/hotsar.jpg`, alt: 'HOTSAR' },
+        period: '2021 – 2025',
+        place: 'Beijing Information Science & Technology University',
+        role: 'Information Management & Information Systems · B.S.',
         points: [
-          'Co-founder · team of 20+',
-          'Clients: Alibaba brands, Tencent, NetEase, DiDi, China Resources, McDonald’s…',
-          'Work: development / creative direction / animation / team management',
+          'Core courses: Database Systems, Python Programming, Data Structures, Data Analysis & Mining',
+          'Also: Computer Networks, Information Systems Analysis & Design, Java Enterprise Development',
         ],
       },
       {
-        period: '2020 – 2025',
-        place: 'Bad Printer Studio · Shenzhen',
-        role: 'Founder',
-        logo: { src: `${import.meta.env.BASE_URL}images/bp.png`, alt: 'Bad Printer Studio' },
+        period: '2021 – 2023',
+        place: 'Youth League Volunteer Service Department',
+        role: 'Member → Vice Minister',
         points: [
-          'Founder · team of 14',
-          'Clients: Honor of Kings / Trip.com / ByteDance / Kuaishou / VIVO / Tecno / Xiaomi / IM Motors…',
-          'Work: team management / creative direction / animation / development',
+          'Coordinated multiple campus-wide volunteer events, from planning to on-site execution',
+          'Volunteer at the 85th Anniversary celebration, responsible for alumni reception',
         ],
       },
       {
-        period: '2025 – Now',
-        place: 'Content Creator',
-        groups: [
-          {
-            heading: '小郑还挺忙',
-            logoImg: `${import.meta.env.BASE_URL}images/buzyzheng.png`,
-            sub: 'tech-DIY creator',
-            items: ['120K on Douyin · 87K on Bilibili · 23K on Xiaohongshu'],
-            links: SOCIAL_LINKS,
-          },
+        period: '2025.02 – 2025.07',
+        place: 'Beijing Huisheng Zhixin Technology Co., Ltd.',
+        role: 'Asset Management Intern',
+        points: [
+          'Collected and cleaned business data using SQL and Excel; handled document sealing and processing',
+          'Gained a deep understanding of the full pipeline from raw data to analysis-ready data',
         ],
       },
       {
-        period: '2026 – Now',
-        place: 'Indie Developer',
-        groups: [{ logo: 'zooop', sub: 'AI creation platform', link: 'https://zooop.ai/' }],
+        period: '2025.10 – 2026.04',
+        place: 'Beijing Changping Shahe Wanda Commercial Management Co., Ltd.',
+        role: 'Operations Assistant',
+        points: [
+          'Collected and organized daily reports; produced weekly and monthly operations analysis reports',
+          'Compiled department data and activity information; resolved cross-department operational issues',
+          'Organized operations meetings and followed up on key tasks',
+        ],
+      },
+      {
+        period: '',
+        place: 'Skills',
+        role: 'Data Analysis · Visualization · AI Collaboration',
+        points: [
+          'Data analysis: Proficient in Excel and complex SQL; data cleaning, multi-table joins, trend analysis',
+          'Data visualization: Tableau, interactive business dashboards',
+          'Python: Pandas/NumPy, Matplotlib/Seaborn',
+          'Product design: UML, Axure/Moqups prototypes',
+          'AI collaboration: Claude Code, WorkBuddy, DeepSeek',
+          'Honors: 2022–2023 Social Contribution Scholarship',
+        ],
       },
     ],
   },
   zh: {
-    title: 'Résumé',
+    title: '履历',
     entries: [
       {
-        period: '2013 – 2017',
-        place: '中山大学',
-        role: '软件工程 · 本科',
-      },
-      {
-        period: '2017 – 2020',
-        place: 'HOTSAR 工作室 · 上海',
-        role: '联合创始人',
-        logo: { src: `${import.meta.env.BASE_URL}images/hotsar.jpg`, alt: 'HOTSAR' },
+        period: '2021 – 2025',
+        place: '北京信息科技大学',
+        role: '信息管理与信息系统 · 本科',
         points: [
-          '联合创始人，团队人数 20+',
-          '服务客户：阿里系品牌、腾讯、网易、滴滴、华润、麦当劳…',
-          '负责：技术开发 / 创意策划 / 动画制作 / 团队管理',
+          '主修课程：数据库系统、Python 程序设计、数据结构、数据分析与数据挖掘',
+          '兼修：计算机网络、信息系统分析与设计、Java 企业级开发与实践',
         ],
       },
       {
-        period: '2020 – 2025',
-        place: '坏打印机工作室 · 深圳',
-        role: '创始人',
-        logo: { src: `${import.meta.env.BASE_URL}images/bp.png`, alt: '坏打印机工作室' },
+        period: '2021 – 2023',
+        place: '校团委志愿服务部',
+        role: '干事 → 副部长',
         points: [
-          '创始人，团队人数 14',
-          '服务客户：王者荣耀 / 携程 / 字节 / 快手 / VIVO / 传音 / 小米…',
-          '负责：团队管理 / 创意策划 / 动画制作 / 技术开发',
+          '统筹协调多场校级志愿活动，全程参与策划、协调与现场执行',
+          '2022 年校庆 85 周年志愿者，负责校友接待，获志愿服务荣誉证书',
         ],
       },
       {
-        period: '2025 – 至今',
-        place: '自媒体博主',
-        groups: [
-          {
-            heading: '小郑还挺忙',
-            logoImg: `${import.meta.env.BASE_URL}images/buzyzheng.png`,
-            sub: '科技 DIY 博主',
-            items: ['抖音 12 万 · B站 8.7 万 · 小红书 2.3 万 关注'],
-            links: SOCIAL_LINKS,
-          },
+        period: '2025.02 – 2025.07',
+        place: '北京汇盛智信科技有限公司',
+        role: '资产管理部实习生',
+        points: [
+          '利用 SQL 与 Excel 完成业务数据收集、清洗及案件用印与处理',
+          '深入理解从原始数据到可分析数据的完整处理流程，提升团队协作能力',
         ],
       },
       {
-        period: '2026 – 至今',
-        place: '独立开发',
-        groups: [{ logo: 'zooop', sub: 'AI 创作平台', link: 'https://zooop.ai/' }],
+        period: '2025.10 – 2026.04',
+        place: '北京昌平沙河万达商业管理有限公司',
+        role: '营运助理',
+        points: [
+          '负责日常报表收集整理，完成营运周报、月报等分析报告制作',
+          '统计各部门数据与活动信息，协调解决跨部门营运问题',
+          '筹备组织营运会议，督促重点工作任务落实并反馈进展',
+        ],
+      },
+      {
+        period: '',
+        place: '技能特长',
+        role: '数据分析 · 可视化 · AI 协作',
+        points: [
+          '数据分析：精通 Excel 与复杂 SQL，擅长数据清洗、多表关联及趋势分析',
+          '数据可视化：熟练使用 Tableau，将数据转化为可交互业务看板',
+          'Python 开发：熟悉 Pandas/NumPy 与 Matplotlib/Seaborn',
+          '产品设计：擅长 UML 业务抽象，熟练 Axure/墨刀交互原型',
+          'AI 协作：熟练运用 Claude Code、WorkBuddy、DeepSeek',
+          '荣誉：2022–2023 学年社会贡献奖学金',
+        ],
       },
     ],
   },

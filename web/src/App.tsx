@@ -24,15 +24,15 @@ type Lang = 'en' | 'zh'
 
 const COPY = {
   en: {
-    title: 'About Sen',
+    title: 'Xu Yachen',
     paragraphs: [
-      "I'm Sen — a creative technologist living where code meets art. I spend my days around coding, creativity, playful interaction & design, and CG work. I love studying and combining skills across different fields — to create, and to explore more possibilities.",
+      "I'm Xu Yachen — a data professional with a solid foundation in Python, SQL and data analysis. I turn business needs into visualizations and product prototypes using tools like Tableau and Axure, and I use data insight to drive decisions while staying efficient across parallel tasks.",
     ],
   },
   zh: {
-    title: 'About Sen',
+    title: '许亚辰',
     paragraphs: [
-      '我是 Sen——一个游走在代码与艺术之间的创意技术人。我常年和 Coding、创意、有趣的交互 & 设计、CG 创作等打交道，喜欢研究并组合不同领域的技能，来创造并探索更多可能性。',
+      '具备扎实数据功底与项目协作能力，系统掌握 Python、SQL 及数据分析相关专业知识，并能借助 Tableau、Axure 等工具将业务需求转化为可视化方案与产品原型。善于通过数据洞察推动业务决策，在多任务并行中保持高效执行力。',
     ],
   },
 }
@@ -170,12 +170,12 @@ export default function App() {
         <span className="hero-mark bl">+</span>
         <span className="hero-mark br">+</span>
         <div className="hero-meta hm-tl">
-          <span className="hm-name">Sen Zheng 郑越升</span>
-          <span>Creative Technologist</span>
+          <span className="hm-name">许亚辰</span>
+          <span>数据分析师</span>
         </div>
-        <div className="hero-meta hm-tr">Portfolio — 2026</div>
-        <div className="hero-meta hm-bl">Code · Art · Play</div>
-        <div className="hero-meta hm-right">Based in Shenzhen</div>
+        <div className="hero-meta hm-tr">个人简历 — 2026</div>
+        <div className="hero-meta hm-bl">数据分析 · 可视化 · AI 协作</div>
+        <div className="hero-meta hm-right">北京 · 1921268044@qq.com</div>
       </motion.div>
 
       {/* 全屏胶片噪点蒙层（multiply 混合） */}

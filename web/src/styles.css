@@ -184,7 +184,7 @@ canvas {
   inset: 0;
   z-index: 12;
   pointer-events: none;
-  font-family: 'Helvetica Neue', 'Chiron GoRound TC', 'PingFang SC', system-ui, sans-serif;
+  font-family: 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', 'Chiron GoRound TC', system-ui, sans-serif;
 }
 
 /* 发丝内框 */
@@ -229,13 +229,13 @@ canvas {
   letter-spacing: 0.26em;
   text-transform: uppercase;
   line-height: 1.6;
-  color: rgba(244, 241, 234, 0.46);
+  color: rgba(244, 241, 234, 0.68);
 }
 .hero-meta .hm-name {
   display: block;
   text-transform: none;
   letter-spacing: 0.12em;
-  color: rgba(244, 241, 234, 0.7);
+  color: rgba(244, 241, 234, 0.92);
 }
 .hm-tl {
   top: calc(var(--m) + 16px);
@@ -286,6 +286,13 @@ canvas {
   margin-bottom: 0.3em;
 }
 
+/* 中文标题：Mansalva 仅含英文花体字形，中文会回退到 cursive 导致模糊，这里切到系统中文字体 */
+.about[lang='zh'] .about-title {
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
 .about-body {
   margin: 0.5em auto 0;
   max-width: min(660px, 88vw);
@@ -312,7 +319,7 @@ canvas {
 
 /* 中文正文：拉丁衬线字体不含汉字，切到系统中文字体并放大行距 */
 .about[lang='zh'] .about-body {
-  font-family: 'Chiron GoRound TC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Chiron GoRound TC', sans-serif;
   font-weight: 400;
   font-size: clamp(8.8px, 0.92vw, 12.8px);
   line-height: 1.7;
@@ -327,7 +334,7 @@ canvas {
   z-index: 110;
   min-width: 52px;
   padding: 7px 16px;
-  font-family: 'Helvetica Neue', 'Chiron GoRound TC', 'PingFang SC', system-ui, sans-serif;
+  font-family: 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', 'Chiron GoRound TC', system-ui, sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.08em;
